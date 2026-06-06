@@ -1,0 +1,45 @@
+# ---- assignment / private files ------------------------------------------
+# The exercise PDF and CLAUDE.md are course/agent-side artifacts and should
+# not be in the public repo.
+computer_vision2026_*_excercise.pdf
+CLAUDE.md
+
+# ---- Python --------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# ---- uv / virtualenvs ----------------------------------------------------
+.venv/
+venv/
+env/
+.python-version
+
+# ---- data & generated outputs --------------------------------------------
+# Sample images are downloaded by curl in README; custom images are private.
+images/
+
+# results/ holds large, fully reproducible artifacts of run_stitching.py.
+results/
+
+# ---- LaTeX build artifacts -----------------------------------------------
+# Keep the .tex source and the figures it embeds; drop the build by-products.
+report/*.aux
+report/*.log
+report/*.out
+report/*.toc
+report/*.fls
+report/*.fdb_latexmk
+report/*.synctex.gz
+report/*.bbl
+report/*.blg
+
+# ---- editors / OS --------------------------------------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*~
