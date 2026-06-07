@@ -1,8 +1,10 @@
-# ---- assignment / private files ------------------------------------------
-# The exercise PDF and CLAUDE.md are course/agent-side artifacts and should
-# not be in the public repo.
+# ---- local / private files -----------------------------------------------
+# Local working files that should not be in the public repo.
 computer_vision2026_*_excercise.pdf
 CLAUDE.md
+
+# Internal workflow notes (planning / self-improvement); not published.
+tasks/
 
 # ---- Python --------------------------------------------------------------
 __pycache__/
@@ -17,15 +19,26 @@ venv/
 env/
 .python-version
 
-# ---- data & generated outputs --------------------------------------------
-# Sample images are downloaded by curl in README; custom images are private.
-images/
+# ---- data ----------------------------------------------------------------
+# The bundled boat sample is curl-able from the README (regenerable), so it is
+# not committed. User-captured photos are private: keep the folder but ignore
+# its contents (HEIC originals + their JPG conversions both live here).
+images/sample/
+images/custom/*
+!images/custom/.gitkeep
 
 # results/ holds large, fully reproducible artifacts of run_stitching.py.
 results/
 
-# ---- LaTeX build artifacts -----------------------------------------------
-# Keep the .tex source and the figures it embeds; drop the build by-products.
+# ---- report (private write-up) -------------------------------------------
+# report/ holds a private LaTeX write-up that can carry the author's identity,
+# so its source, PDF, and build script are NOT committed (a clone has no
+# report.tex, so build.sh would be useless there anyway). The result figures
+# stay tracked — they double as the example gallery shown in the README.
+report/*.tex
+report/*.pdf
+report/build.sh
+# LaTeX build by-products
 report/*.aux
 report/*.log
 report/*.out
