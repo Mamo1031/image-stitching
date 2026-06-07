@@ -1,7 +1,7 @@
 [project]
 name = "image-stitching"
 version = "0.1.0"
-description = "Computer Vision exercise: multi-image stitching under translation / similarity / affine / homography"
+description = "Multi-image stitching under translation / similarity / affine / homography motion models"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
